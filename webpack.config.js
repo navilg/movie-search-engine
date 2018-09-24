@@ -9,7 +9,7 @@ var config = {
         path: DIST_DIR,
         filename: "bundle.js"
     },
-    devtool:"cheap-module-source-map",
+    devtool: "cheap-module-source-map",
     module: {
         rules: [
             {
@@ -26,12 +26,18 @@ var config = {
             {
                 test: /\.(png|jpg|jpeg|gif)$/,
                 use: [
-                  {
-                    loader: 'file-loader',
-                    options: {}
-                  }
+                    {
+                        loader: 'file-loader',
+                        options: {}
+                    }
                 ]
-              }
+            }
+            // { 
+            //     test: /\.jsx?$/, 
+            //     include: SRC_DIR,
+            //     loader: 'eslint-loader', 
+            //     exclude: /node_modules/ 
+            // }
         ],
 
     },

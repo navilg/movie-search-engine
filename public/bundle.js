@@ -34937,7 +34937,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Glo
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat);", ""]);
 
 // module
-exports.push([module.i, "* {\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: white;\n  font-family: Helvetica, Arial, sans-serif; }\n\nbutton {\n  cursor: pointer; }\n\nbutton:disabled {\n  cursor: default; }\n\n.is-active {\n  font-weight: bold;\n  float: left;\n  margin-right: 5px;\n  color: white; }\n\n.is-active:hover {\n  color: antiquewhite; }\n\n.header-element .top-nav-appbar {\n  width: 100vw; }\n  .header-element .top-nav-appbar .top-nav {\n    width: 100%;\n    background-color: #081C24; }\n    .header-element .top-nav-appbar .top-nav .link-nav {\n      float: right; }\n    .header-element .top-nav-appbar .top-nav .home-icon .icon {\n      color: white;\n      height: 2em !important;\n      width: 3em !important;\n      margin-right: 15px; }\n    .header-element .top-nav-appbar .top-nav .home-icon .icon:hover {\n      color: #548396; }\n    .header-element .top-nav-appbar .top-nav .headerText {\n      font-family: 'Gloria Hallelujah', cursive; }\n\n.hero {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  color: black;\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"/images/background.jpg\");\n  background-size: cover;\n  background-position: center center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  margin-bottom: 20px; }\n  .hero input {\n    height: 30px;\n    width: 60vw;\n    background-color: white;\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n    padding-left: 10px; }\n  .hero .search-icon {\n    height: 2em !important;\n    width: 2em !important;\n    color: white; }\n\n.flex-container {\n  margin-top: 1em !important;\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n  background-color: #bad5f0; }\n\n.search-results h1 {\n  text-align: center; }\n\n.search-results .flex-element {\n  width: 250px;\n  background-color: #f1f1f1;\n  margin: 10px;\n  padding: 20px;\n  font-size: 30px; }\n  .search-results .flex-element .contentflex {\n    width: 250px;\n    height: 489px; }\n    .search-results .flex-element .contentflex .cardimage {\n      display: block;\n      margin: 0 auto;\n      width: 200px; }\n\n.trending-movies {\n  margin-top: 5em; }\n  .trending-movies h1 {\n    text-align: center; }\n  .trending-movies .flex-container-popular {\n    margin-top: 1em !important;\n    display: flex;\n    justify-content: space-around;\n    flex-wrap: wrap;\n    background-color: #bad5f0; }\n    .trending-movies .flex-container-popular .flex-element {\n      width: 250px;\n      background-color: #f1f1f1;\n      margin: 10px;\n      padding: 20px;\n      font-size: 30px; }\n      .trending-movies .flex-container-popular .flex-element .contentflex {\n        width: 250px;\n        height: 489px; }\n        .trending-movies .flex-container-popular .flex-element .contentflex .cardimage {\n          display: block;\n          margin: 0 auto;\n          width: 200px; }\n\n.movie-detail {\n  margin: auto;\n  margin-top: 5em;\n  width: 70%; }\n  .movie-detail h1 {\n    text-align: center;\n    margin-bottom: 15px;\n    margin-left: 10px; }\n  .movie-detail img {\n    float: left;\n    width: 200px;\n    margin: 15px; }\n\n.botom-footer {\n  clear: both !important; }\n\n.collection-list {\n  margin-top: 5em; }\n\n.my-class {\n  background: red; }\n", ""]);
+exports.push([module.i, "* {\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: white;\n  font-family: Helvetica, Arial, sans-serif; }\n\nbutton {\n  cursor: pointer; }\n\nbutton:disabled {\n  cursor: default; }\n\n.is-active {\n  font-weight: bold;\n  float: left;\n  margin-right: 5px;\n  color: white; }\n\n.is-active:hover {\n  color: antiquewhite; }\n\n.header-element .top-nav-appbar {\n  width: 100vw; }\n  .header-element .top-nav-appbar .top-nav {\n    display: flex;\n    justify-content: space-between;\n    background-color: #081c24; }\n    .header-element .top-nav-appbar .top-nav a {\n      color: white;\n      text-decoration: none;\n      padding: 5px; }\n    .header-element .top-nav-appbar .top-nav a:hover {\n      color: #548396; }\n    .header-element .top-nav-appbar .top-nav .left-nav {\n      display: inherit; }\n      .header-element .top-nav-appbar .top-nav .left-nav .home-icon .icon {\n        color: white;\n        height: 2em !important;\n        width: 3em !important;\n        margin-right: 15px; }\n      .header-element .top-nav-appbar .top-nav .left-nav .home-icon .icon:hover {\n        color: #548396; }\n      .header-element .top-nav-appbar .top-nav .left-nav .headerText {\n        padding: 5px;\n        font-family: \"Gloria Hallelujah\", cursive; }\n\n.hero {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  color: black;\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"/images/background.jpg\");\n  background-size: cover;\n  background-position: center center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  margin-bottom: 20px; }\n  .hero input {\n    height: 30px;\n    width: 60vw;\n    background-color: white;\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n    padding-left: 10px; }\n  .hero .search-icon {\n    height: 2em !important;\n    width: 2em !important;\n    color: white; }\n\n.flex-container {\n  margin-top: 1em !important;\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n  background-color: #bad5f0; }\n\n.search-results h1 {\n  text-align: center; }\n\n.search-results .flex-element {\n  width: 250px;\n  background-color: #f1f1f1;\n  margin: 10px;\n  padding: 20px;\n  font-size: 30px; }\n  .search-results .flex-element .contentflex {\n    width: 250px;\n    height: 489px; }\n    .search-results .flex-element .contentflex .cardimage {\n      display: block;\n      margin: 0 auto;\n      width: 200px; }\n\n.trending-movies {\n  margin-top: 5em; }\n  .trending-movies h1 {\n    text-align: center; }\n  .trending-movies .flex-container-popular {\n    margin-top: 1em !important;\n    display: flex;\n    justify-content: space-around;\n    flex-wrap: wrap;\n    background-color: #bad5f0; }\n    .trending-movies .flex-container-popular .flex-element {\n      width: 250px;\n      background-color: #f1f1f1;\n      margin: 10px;\n      padding: 20px;\n      font-size: 30px; }\n      .trending-movies .flex-container-popular .flex-element .contentflex {\n        width: 250px;\n        height: 489px; }\n        .trending-movies .flex-container-popular .flex-element .contentflex .cardimage {\n          display: block;\n          margin: 0 auto;\n          width: 200px; }\n\n.movie-detail {\n  margin: auto;\n  margin-top: 5em;\n  width: 70%; }\n  .movie-detail h1 {\n    text-align: center;\n    margin-bottom: 15px;\n    margin-left: 10px; }\n  .movie-detail img {\n    float: left;\n    width: 200px;\n    margin: 15px; }\n\n.botom-footer {\n  clear: both !important; }\n\n.collection-list {\n  margin-top: 5em;\n  margin-left: 10px; }\n  .collection-list .create-category {\n    background-color: aliceblue; }\n\n.my-class {\n  background: red; }\n", ""]);
 
 // exports
 
@@ -71222,6 +71222,20 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/Button/index.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/TextField/index.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Dialog */ "./node_modules/@material-ui/core/Dialog/index.js");
+/* harmony import */ var _material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/DialogActions */ "./node_modules/@material-ui/core/DialogActions/index.js");
+/* harmony import */ var _material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/DialogContent */ "./node_modules/@material-ui/core/DialogContent/index.js");
+/* harmony import */ var _material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/DialogContentText */ "./node_modules/@material-ui/core/DialogContentText/index.js");
+/* harmony import */ var _material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/DialogTitle */ "./node_modules/@material-ui/core/DialogTitle/index.js");
+/* harmony import */ var _material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71242,15 +71256,80 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
+
+
+
+
+var listcat = [];
+
 var Collection =
 /*#__PURE__*/
 function (_React$Component) {
   _inherits(Collection, _React$Component);
 
   function Collection() {
+    var _getPrototypeOf2;
+
+    var _temp, _this;
+
     _classCallCheck(this, Collection);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Collection).apply(this, arguments));
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Collection)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {
+      open: false,
+      storage: []
+    }, _this.handleClickOpen = function () {
+      _this.setState({
+        open: true
+      });
+    }, _this.handleClose = function () {
+      _this.setState({
+        open: false
+      });
+    }, _this.ExistingCategory = function () {
+      var _loop = function _loop() {
+        var v = i;
+        listcat.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+          key: v,
+          onClick: function onClick() {
+            return _this.addtoCategory(localStorage.key(v));
+          }
+        }, localStorage.key(v)));
+      };
+
+      for (var i = 0; i < localStorage.length; i++) {
+        _loop();
+      }
+
+      _this.setState({});
+    }, _this.addtoCategory = function (collectionName) {
+      console.log(collectionName);
+      console.log(localStorage.getItem(collectionName));
+      var moviename = _this.props.location.state.moviename;
+      var n = localStorage.getItem(collectionName);
+      console.log(n);
+      n = n + JSON.stringify(moviename);
+      console.log(n);
+      localStorage.setItem(collectionName, n);
+    }, _this.handleCreateCollection = function () {
+      var value = document.getElementById('name').value;
+      var moviename = _this.props.location.state.moviename;
+
+      if (localStorage.getItem(value) != null) {
+        var n = localStorage.getItem(value);
+        n = n + JSON.stringify(moviename);
+        localStorage.setItem(value, n);
+      } else {
+        localStorage.setItem(value, JSON.stringify(moviename));
+      }
+
+      _this.handleClose();
+    }, _temp));
   }
 
   _createClass(Collection, [{
@@ -71261,10 +71340,34 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      // const { moviename } = this.props
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "collection-list"
-      }, "Movie Passed ", this.props.match.params.title);
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        onClick: this.handleClickOpen,
+        className: "create-category"
+      }, "Create New Category"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        onClick: this.ExistingCategory
+      }, "Existing Category"), listcat.map(function (data) {
+        return data;
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        open: this.state.open,
+        onClose: this.handleClose,
+        "aria-labelledby": "form-dialog-title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        id: "form-dialog-title"
+      }, "Add New Collection"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_5___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_6___default.a, null, "To add a new collection, please enter the collection name here and click on create."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2___default.a, {
+        autoFocus: true,
+        margin: "dense",
+        id: "name",
+        label: "Collection Name",
+        type: "text"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        onClick: this.handleClose,
+        color: "primary"
+      }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        onClick: this.handleCreateCollection,
+        color: "primary"
+      }, "Create"))));
     }
   }]);
 
@@ -71418,6 +71521,8 @@ var Header = function Header() {
     className: "top-nav-appbar"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Toolbar"], {
     className: "top-nav"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "left-nav"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/",
     className: "home-icon"
@@ -71427,7 +71532,7 @@ var Header = function Header() {
     variant: "display1",
     color: "inherit",
     className: "headerText"
-  }, "Movie Search Engine"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Movie Search Engine")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "link-nav"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     to: "/trending-movies"

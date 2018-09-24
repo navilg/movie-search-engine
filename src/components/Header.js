@@ -9,10 +9,12 @@ const Header = () => {
         <div className="header-element">
             <AppBar position="fixed" className="top-nav-appbar">
                 <Toolbar className="top-nav">
-                    <Link to="/" className="home-icon">
-                        <HomeIcon className="icon" />
-                    </Link>
-                    <Typography variant="display1" color="inherit" className="headerText">Movie Search Engine</Typography>
+                    <div className="left-nav">
+                        <Link to="/" className="home-icon">
+                            <HomeIcon className="icon" />
+                        </Link>
+                        <Typography variant="display1" color="inherit" className="headerText">Movie Search Engine</Typography>
+                    </div>
                     <div className="link-nav">
                         <NavLink to="/trending-movies">Trending Movies</NavLink>
                         <NavLink to="/collections">My Collections</NavLink>
