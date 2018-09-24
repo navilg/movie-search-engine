@@ -8,14 +8,11 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 var listcat = [];
+
 class Collection extends React.Component {
-    componentDidMount() {
-        console.log(this.props.location.state);
-    }
 
     state = {
         open: false,
-        storage: []
     };
 
     handleClickOpen = () => {
@@ -27,45 +24,53 @@ class Collection extends React.Component {
     }
 
     ExistingCategory = () => {
-        for (var i = 0; i < localStorage.length; i++) {
-            let v = i;
-            listcat.push(
-                <Button key={v} onClick={() => this.addtoCategory(localStorage.key(v))}>
-                    {localStorage.key(v)}
-                </Button>
-            )
-        }
+            for (var i=0; i < localStorage.length; i++) {
+                let v = i;
+                listcat.push(
+                    <Button key={v} onClick={() => this.addtoCategory(localStorage.key(v))}>
+                        {localStorage.key(v)}
+                    </Button>
+                )
+            }     
         this.setState({
 
         });
     }
 
     addtoCategory = (collectionName) => {
-        console.log(collectionName);
-        console.log(localStorage.getItem(collectionName));
-        const { moviename } = this.props.location.state;
-        let n = localStorage.getItem(collectionName);
-        console.log(n);
-        
-        n = n + JSON.stringify(moviename);
-        console.log(n);
-        
-        localStorage.setItem(collectionName, n);
+        const { moviename, movieid } = this.props.location.state;
+        const moviedetail = {
+            movieName: moviename,
+            movieId: movieid
+        }
+        var storage = [];
+        console.log(moviedetail);
+        storage.push(localStorage.getItem(collectionName));
+        storage.push(JSON.stringify(moviedetail));
+        localStorage.setItem(collectionName, storage);
+        alert('Added to selected category');
     }
 
 
     handleCreateCollection = () => {
         let value = document.getElementById('name').value;
-        const { moviename } = this.props.location.state;
+        var storage = [];
+        const { moviename, movieid } = this.props.location.state;
+        const moviedetail = {
+            movieName: moviename,
+            movieId: movieid
+        }
         if (localStorage.getItem(value) != null) {
-            let n = localStorage.getItem(value);
-            n = n + JSON.stringify(moviename);
-            localStorage.setItem(value, n);
+            storage.push(localStorage.getItem(value));
+            storage.push(JSON.stringify(moviedetail));
+            localStorage.setItem(value, storage);
         }
         else {
-            localStorage.setItem(value, JSON.stringify(moviename));
+            storage.push(JSON.stringify(moviedetail));
+            localStorage.setItem(value, storage);
         }
         this.handleClose();
+        alert('Created and added to collection');
     };
 
     render() {
@@ -73,7 +78,7 @@ class Collection extends React.Component {
             <div className="collection-list">
                 <Button onClick={this.handleClickOpen} className="create-category">Create New Category</Button>
                 <Button onClick={this.ExistingCategory} className="existing-category">Existing Category</Button>
-                {listcat.map(data => data)}
+                <div className="list-collection">{listcat.map(data => data)}</div>
                 <Dialog
                     open={this.state.open}
                     onClose={this.handleClose}
@@ -97,7 +102,7 @@ class Collection extends React.Component {
                             Cancel
                         </Button>
                         <Button onClick={this.handleCreateCollection} color="primary">
-                            Create
+                            Create and Add
                     </Button>
                     </DialogActions>
                 </Dialog>

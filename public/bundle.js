@@ -34937,7 +34937,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Glo
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat);", ""]);
 
 // module
-exports.push([module.i, "* {\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: white;\n  font-family: Helvetica, Arial, sans-serif; }\n\nbutton {\n  cursor: pointer; }\n\nbutton:disabled {\n  cursor: default; }\n\n.is-active {\n  font-weight: bold;\n  float: left;\n  margin-right: 5px;\n  color: white; }\n\n.is-active:hover {\n  color: antiquewhite; }\n\n.header-element .top-nav-appbar {\n  width: 100vw; }\n  .header-element .top-nav-appbar .top-nav {\n    display: flex;\n    justify-content: space-between;\n    background-color: #081c24; }\n    .header-element .top-nav-appbar .top-nav a {\n      color: white;\n      text-decoration: none;\n      padding: 5px; }\n    .header-element .top-nav-appbar .top-nav a:hover {\n      color: #548396; }\n    .header-element .top-nav-appbar .top-nav .left-nav {\n      display: inherit; }\n      .header-element .top-nav-appbar .top-nav .left-nav .home-icon .icon {\n        color: white;\n        height: 2em !important;\n        width: 3em !important;\n        margin-right: 15px; }\n      .header-element .top-nav-appbar .top-nav .left-nav .home-icon .icon:hover {\n        color: #548396; }\n      .header-element .top-nav-appbar .top-nav .left-nav .headerText {\n        padding: 5px;\n        font-family: \"Gloria Hallelujah\", cursive; }\n\n.hero {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  color: black;\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"/images/background.jpg\");\n  background-size: cover;\n  background-position: center center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  margin-bottom: 20px; }\n  .hero input {\n    height: 30px;\n    width: 60vw;\n    background-color: white;\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n    padding-left: 10px; }\n  .hero .search-icon {\n    height: 2em !important;\n    width: 2em !important;\n    color: white; }\n\n.flex-container {\n  margin-top: 1em !important;\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n  background-color: #bad5f0; }\n\n.search-results h1 {\n  text-align: center; }\n\n.search-results .flex-element {\n  width: 250px;\n  background-color: #f1f1f1;\n  margin: 10px;\n  padding: 20px;\n  font-size: 30px; }\n  .search-results .flex-element .contentflex {\n    width: 250px;\n    height: 489px; }\n    .search-results .flex-element .contentflex .cardimage {\n      display: block;\n      margin: 0 auto;\n      width: 200px; }\n\n.trending-movies {\n  margin-top: 5em; }\n  .trending-movies h1 {\n    text-align: center; }\n  .trending-movies .flex-container-popular {\n    margin-top: 1em !important;\n    display: flex;\n    justify-content: space-around;\n    flex-wrap: wrap;\n    background-color: #bad5f0; }\n    .trending-movies .flex-container-popular .flex-element {\n      width: 250px;\n      background-color: #f1f1f1;\n      margin: 10px;\n      padding: 20px;\n      font-size: 30px; }\n      .trending-movies .flex-container-popular .flex-element .contentflex {\n        width: 250px;\n        height: 489px; }\n        .trending-movies .flex-container-popular .flex-element .contentflex .cardimage {\n          display: block;\n          margin: 0 auto;\n          width: 200px; }\n\n.movie-detail {\n  margin: auto;\n  margin-top: 5em;\n  width: 70%; }\n  .movie-detail h1 {\n    text-align: center;\n    margin-bottom: 15px;\n    margin-left: 10px; }\n  .movie-detail img {\n    float: left;\n    width: 200px;\n    margin: 15px; }\n\n.botom-footer {\n  clear: both !important; }\n\n.collection-list {\n  margin-top: 5em;\n  margin-left: 10px; }\n  .collection-list .create-category {\n    background-color: aliceblue; }\n\n.my-class {\n  background: red; }\n", ""]);
+exports.push([module.i, "* {\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: white;\n  font-family: Helvetica, Arial, sans-serif; }\n\nbutton {\n  cursor: pointer; }\n\nbutton:disabled {\n  cursor: default; }\n\n.is-active {\n  font-weight: bold;\n  float: left;\n  margin-right: 5px;\n  color: white; }\n\n.is-active:hover {\n  color: antiquewhite; }\n\n.header-element .top-nav-appbar {\n  width: 100vw; }\n  .header-element .top-nav-appbar .top-nav {\n    display: flex;\n    justify-content: space-between;\n    background-color: #081c24; }\n    .header-element .top-nav-appbar .top-nav a {\n      color: white;\n      text-decoration: none;\n      padding: 5px; }\n    .header-element .top-nav-appbar .top-nav a:hover {\n      color: #548396; }\n    .header-element .top-nav-appbar .top-nav .left-nav {\n      display: inherit; }\n      .header-element .top-nav-appbar .top-nav .left-nav .home-icon .icon {\n        color: white;\n        height: 2em !important;\n        width: 3em !important;\n        margin-right: 15px; }\n      .header-element .top-nav-appbar .top-nav .left-nav .home-icon .icon:hover {\n        color: #548396; }\n      .header-element .top-nav-appbar .top-nav .left-nav .headerText {\n        padding: 5px;\n        font-family: \"Gloria Hallelujah\", cursive; }\n\n.hero {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  color: black;\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"/images/background.jpg\");\n  background-size: cover;\n  background-position: center center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  margin-bottom: 20px; }\n  .hero input {\n    height: 30px;\n    width: 60vw;\n    background-color: white;\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n    padding-left: 10px; }\n  .hero .search-icon {\n    height: 2em !important;\n    width: 2em !important;\n    color: white; }\n\n.flex-container {\n  margin-top: 1em !important;\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n  background-color: #bad5f0; }\n\n.search-results h1 {\n  text-align: center; }\n\n.search-results .flex-element {\n  width: 250px;\n  background-color: #f1f1f1;\n  margin: 10px;\n  padding: 20px;\n  font-size: 30px; }\n  .search-results .flex-element .contentflex {\n    width: 250px;\n    height: 489px; }\n    .search-results .flex-element .contentflex .cardimage {\n      display: block;\n      margin: 0 auto;\n      width: 200px; }\n\n.trending-movies {\n  margin-top: 5em; }\n  .trending-movies h1 {\n    text-align: center; }\n  .trending-movies .flex-container-popular {\n    margin-top: 1em !important;\n    display: flex;\n    justify-content: space-around;\n    flex-wrap: wrap;\n    background-color: #bad5f0; }\n    .trending-movies .flex-container-popular .flex-element {\n      width: 250px;\n      background-color: #f1f1f1;\n      margin: 10px;\n      padding: 20px;\n      font-size: 30px; }\n      .trending-movies .flex-container-popular .flex-element .contentflex {\n        width: 250px;\n        height: 489px; }\n        .trending-movies .flex-container-popular .flex-element .contentflex .cardimage {\n          display: block;\n          margin: 0 auto;\n          width: 200px; }\n\n.movie-detail {\n  margin: auto;\n  margin-top: 5em;\n  width: 70%; }\n  .movie-detail h1 {\n    text-align: center;\n    margin-bottom: 15px;\n    margin-left: 10px; }\n  .movie-detail img {\n    float: left;\n    width: 200px;\n    margin: 15px; }\n\n.botom-footer {\n  clear: both !important; }\n\n.collection-list {\n  margin-top: 5em;\n  margin-left: 10px; }\n  .collection-list .create-category {\n    background-color: aliceblue; }\n\n.collection {\n  margin-top: 5em; }\n\n.my-class {\n  background: red; }\n", ""]);
 
 // exports
 
@@ -71281,8 +71281,7 @@ function (_React$Component) {
     }
 
     return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Collection)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {
-      open: false,
-      storage: []
+      open: false
     }, _this.handleClickOpen = function () {
       _this.setState({
         open: true
@@ -71308,36 +71307,46 @@ function (_React$Component) {
 
       _this.setState({});
     }, _this.addtoCategory = function (collectionName) {
-      console.log(collectionName);
-      console.log(localStorage.getItem(collectionName));
-      var moviename = _this.props.location.state.moviename;
-      var n = localStorage.getItem(collectionName);
-      console.log(n);
-      n = n + JSON.stringify(moviename);
-      console.log(n);
-      localStorage.setItem(collectionName, n);
+      var _this$props$location$ = _this.props.location.state,
+          moviename = _this$props$location$.moviename,
+          movieid = _this$props$location$.movieid;
+      var moviedetail = {
+        movieName: moviename,
+        movieId: movieid
+      };
+      var storage = [];
+      console.log(moviedetail);
+      storage.push(localStorage.getItem(collectionName));
+      storage.push(JSON.stringify(moviedetail));
+      localStorage.setItem(collectionName, storage);
+      alert('Added to selected category');
     }, _this.handleCreateCollection = function () {
       var value = document.getElementById('name').value;
-      var moviename = _this.props.location.state.moviename;
+      var storage = [];
+      var _this$props$location$2 = _this.props.location.state,
+          moviename = _this$props$location$2.moviename,
+          movieid = _this$props$location$2.movieid;
+      var moviedetail = {
+        movieName: moviename,
+        movieId: movieid
+      };
 
       if (localStorage.getItem(value) != null) {
-        var n = localStorage.getItem(value);
-        n = n + JSON.stringify(moviename);
-        localStorage.setItem(value, n);
+        storage.push(localStorage.getItem(value));
+        storage.push(JSON.stringify(moviedetail));
+        localStorage.setItem(value, storage);
       } else {
-        localStorage.setItem(value, JSON.stringify(moviename));
+        storage.push(JSON.stringify(moviedetail));
+        localStorage.setItem(value, storage);
       }
 
       _this.handleClose();
+
+      alert('Created and added to collection');
     }, _temp));
   }
 
   _createClass(Collection, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      console.log(this.props.location.state);
-    }
-  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71346,10 +71355,13 @@ function (_React$Component) {
         onClick: this.handleClickOpen,
         className: "create-category"
       }, "Create New Category"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        onClick: this.ExistingCategory
-      }, "Existing Category"), listcat.map(function (data) {
+        onClick: this.ExistingCategory,
+        className: "existing-category"
+      }, "Existing Category"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "list-collection"
+      }, listcat.map(function (data) {
         return data;
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3___default.a, {
         open: this.state.open,
         onClose: this.handleClose,
         "aria-labelledby": "form-dialog-title"
@@ -71367,7 +71379,7 @@ function (_React$Component) {
       }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
         onClick: this.handleCreateCollection,
         color: "primary"
-      }, "Create"))));
+      }, "Create and Add"))));
     }
   }]);
 
@@ -71601,6 +71613,8 @@ var Movie = function Movie(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module './CollectionList'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71621,6 +71635,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+var listcat = [];
+
 var MovieCollection =
 /*#__PURE__*/
 function (_React$Component) {
@@ -71632,6 +71649,15 @@ function (_React$Component) {
     _classCallCheck(this, MovieCollection);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(MovieCollection).call(this, props));
+
+    _this.showCollection = function (keyValue) {
+      _this.state.collection = [];
+
+      _this.state.collection.push(localStorage.getItem(keyValue));
+
+      console.log(_this.state.collection.movieName);
+    };
+
     _this.state = {
       collection: []
     };
@@ -71640,16 +71666,36 @@ function (_React$Component) {
 
   _createClass(MovieCollection, [{
     key: "componentDidMount",
-    value: function componentDidMount() {// write code here to retrieve your data from Local Storage or JSON server
-    }
-  }, {
-    key: "compponentDidUpdate",
-    value: function compponentDidUpdate(prevProps, prevState) {// write code here to save your data to Local Storage or JSON server
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var _loop = function _loop() {
+        var v = i;
+        listcat.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+          key: v,
+          onClick: function onClick() {
+            return _this2.showCollection(localStorage.key(v));
+          }
+        }, localStorage.key(v)));
+      };
+
+      for (var i = 0; i < localStorage.length; i++) {
+        _loop();
+      }
+
+      this.setState({});
     }
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "This is movie collection view");
+      var collection = this.state.collection;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "collection"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "list-collection"
+      }, listcat.map(function (data) {
+        return data;
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, collection[0].movieName));
     }
   }]);
 
@@ -71758,7 +71804,8 @@ function (_React$Component) {
         to: {
           pathname: '/collection',
           state: {
-            moviename: movies.title
+            moviename: movies.title,
+            movieid: movies.id
           }
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], null, "Add to collection"))));

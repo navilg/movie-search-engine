@@ -1,5 +1,9 @@
 import React from 'react';
+import { Button } from '@material-ui/core';
 
+import CollectioList from './CollectionList';
+
+var listcat = [];
 class MovieCollection extends React.Component {
   constructor(props) {
     super(props);
@@ -9,15 +13,32 @@ class MovieCollection extends React.Component {
   }
 
   componentDidMount() {
-    // write code here to retrieve your data from Local Storage or JSON server
-  }
+    for (var i = 0; i < localStorage.length; i++) {
+      let v = i;
+      listcat.push(
+        <Button key={v} onClick={() => this.showCollection(localStorage.key(v))}>
+          {localStorage.key(v)}
+        </Button>
+      )
+    }
+    this.setState({
 
-  compponentDidUpdate(prevProps, prevState) {
-    // write code here to save your data to Local Storage or JSON server
+    });
+  }
+  showCollection = (keyValue) => {
+    this.state.collection = [];
+    this.state.collection.push(localStorage.getItem(keyValue));
+    console.log(this.state.collection);
   }
 
   render() {
-    return <div>This is movie collection view</div>
+    const collection = this.state.collection;
+    return (
+      <div className="collection">
+        <div className="list-collection">{listcat.map(data => data)}</div>
+        <div></div>
+      </div>
+    )
   }
 }
 

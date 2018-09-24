@@ -56,7 +56,9 @@ class MovieDetail extends React.Component {
           </Typography>
           <Link to={{
             pathname : '/collection',
-            state : {moviename : movies.title}
+            state : {
+              moviename : movies.title,
+              movieid: movies.id}
             }}>
             <Button>Add to collection</Button>
             </Link>
