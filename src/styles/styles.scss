@@ -1,0 +1,21 @@
+@import './base/settings';
+@import './base/base';
+@import './components/header';
+@import './components/searchmovie';
+@import './components/movie';
+@import './components/movies';
+@import './components/trendingmovies';
+@import './components/moviedetail';
+@import './components/footer';
+@import './components/collection';
+
+
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
+
+.my-class {
+  background: red;
+}
+
+
+
+

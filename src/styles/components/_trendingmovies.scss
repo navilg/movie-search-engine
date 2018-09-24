@@ -1,0 +1,31 @@
+
+.trending-movies{
+    margin-top: 5em;
+    h1{
+        text-align: center;
+    }
+    .flex-container-popular {
+        margin-top: 1em !important;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: rgb(186, 213, 240);
+        .flex-element {
+            width: 250px; 
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            .contentflex {
+                width: 250px;
+                height: 489px;
+                .cardimage{
+                    display: block;
+                    margin: 0 auto;
+                    width: 200px;
+                }
+            }
+        }
+    }
+    
+}

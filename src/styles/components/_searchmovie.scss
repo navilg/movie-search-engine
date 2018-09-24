@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+    input {
+        height: 30px;
+        width: 60vw;
+        background-color: rgba(255, 255, 255, 1);
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 10px;
+    }
+
+    .search-icon {
+        height: 2em !important;
+        width: 2em !important;
+        color: white;
+    }
+}
