@@ -71695,8 +71695,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 /* global localStorage:true */
 
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
-
 /* eslint class-methods-use-this: ["error", { "exceptMethods": ["render"] }] */
 
 
