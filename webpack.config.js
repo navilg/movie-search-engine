@@ -1,49 +1,49 @@
-var path = require("path");
+const path = require('path');
 
-var DIST_DIR = path.resolve(__dirname, "public");
-var SRC_DIR = path.resolve(__dirname, "src");
+const DIST_DIR = path.resolve(__dirname, 'public');
+const SRC_DIR = path.resolve(__dirname, 'src');
 
-var config = {
-    entry: SRC_DIR + "/app.js",
-    output: {
-        path: DIST_DIR,
-        filename: "bundle.js"
-    },
-    devtool: "cheap-module-source-map",
-    module: {
-        rules: [
-            {
-                test: /\.s?css$/,
-                include: SRC_DIR,
-                use: ['style-loader', 'css-loader', 'sass-loader']
-            },
-            {
+const config = {
+  entry: `${SRC_DIR}/app.js`,
+  output: {
+    path: DIST_DIR,
+    filename: 'bundle.js',
+  },
+  devtool: 'cheap-module-source-map',
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        include: SRC_DIR,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
 
-                test: /\.js?/,
-                include: SRC_DIR,
-                use: [
-                    { loader: "babel-loader" },
-                    {
-                        loader: "eslint-loader",
-                        options:
-                            { fix: true }
-                    }
+        test: /\.js?/,
+        include: SRC_DIR,
+        use: [
+          { loader: 'babel-loader' },
+          {
+            loader: 'eslint-loader',
+            options:
+              { fix: true },
+          },
 
-                ]
-            },
-            {
-                test: /\.(png|jpg|jpeg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {}
-                    }
-                ]
-            }
         ],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
+      },
+    ],
 
-    },
-    mode: "development"
+  },
+  mode: 'development',
 };
 
 module.exports = config;

@@ -1,5 +1,11 @@
+/* eslint react/jsx-filename-extension:0 */
+/* eslint react/prop-types: 0 */
+/* eslint camelcase: 0 */
+/* eslint react/jsx-filename-extension:0 */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -14,11 +20,16 @@ const styles = {
 };
 
 class Footer extends React.Component {
-  state = {
-    value: 0,
-  };
+  constructor(){
+    super()
+    this.state = {
+      value: 0,
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  
 
-  handleChange = (event, value) => {
+  handleChange(event, value) {
     this.setState({ value });
   };
 
@@ -40,8 +51,8 @@ class Footer extends React.Component {
   }
 }
 
-Footer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+// Footer.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
 
 export default withStyles(styles)(Footer);

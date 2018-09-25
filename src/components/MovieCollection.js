@@ -1,21 +1,28 @@
 /* eslint react/jsx-filename-extension:0 */
+/* eslint react/prop-types: 0 */
+/* eslint camelcase: 0 */
+/* global localStorage:true */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["render"] }] */
+
 import React from 'react';
 import { Button } from '@material-ui/core';
 
 
 var listcat = [];
 var lists = [];
+
 class MovieCollection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       collection: []
     }
+    this.showCollection = this.showCollection.bind(this);
   }
 
   componentDidMount() {
     listcat = [];
-    for (var i = 0; i < localStorage.length; i++) {
+    for (var i = 0; i < localStorage.length; i += 1) {
       let v = i;
       listcat.push(
         <Button key={v} onClick={() => this.showCollection(localStorage.key(v))}>
@@ -27,29 +34,21 @@ class MovieCollection extends React.Component {
 
     });
   }
-  showCollection = (keyValue) => {
+  showCollection(keyValue) {
     lists = [];
     this.state.collection = [];
     this.state.collection.push(localStorage.getItem(keyValue).split(','));
-    for(var i=0; i<this.state.collection[0].length;i++){
-      let v=i;
-      console.log("entered to loop");   
+    for(let i=0; i<this.state.collection[0].length;i += 1){
+      let v = i;  
       lists.push(
         <div key={v}>{this.state.collection[0][v]}</div>
       )
     }
-
     this.setState({
 
     });
-
-
-    console.log(this.state.collection);
-    console.log(this.state.collection[0].length);
   }
-
   render() {
-    const collection = this.state.collection;
     return (
       <div className="collection">
         <div className="list-collection">{listcat.map(data => data)}</div>

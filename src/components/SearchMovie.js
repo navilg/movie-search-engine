@@ -1,3 +1,9 @@
+/* eslint react/jsx-filename-extension:0 */
+/* eslint react/prop-types: 0 */
+/* eslint camelcase: 0 */
+/* eslint react/jsx-filename-extension:0 */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+
 import React from 'react';
 import Input from '@material-ui/core/Input';
 import SearchIcon from '@material-ui/icons/Search';
@@ -20,7 +26,7 @@ class SearchMovie extends React.Component {
     return (
       <div className="hero">
           <Input placeholder="Seach movies" onChange={this.handleOnChange}/>
-          <SearchIcon className="search-icon" onClick={this.props.handleSearchMovie.bind(null, this.state.searchTerm)}/>
+          <SearchIcon className="search-icon" onClick={()=>this.props.handleSearchMovie(this.state.searchTerm)}/>
       </div>
     );
   }

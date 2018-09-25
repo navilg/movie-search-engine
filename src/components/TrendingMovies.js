@@ -1,5 +1,12 @@
+/* eslint react/jsx-filename-extension:0 */
+/* eslint react/prop-types: 0 */
+/* eslint camelcase: 0 */
+/* eslint react/jsx-filename-extension:0 */
+/* global fetch:true */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+
 import React from 'react';
-import { Card, CardActionArea, CardContent, CardMedia, Typography, CardActions, Button } from '@material-ui/core';
+import { Card, CardActionArea, CardContent, CardMedia, Typography, CardActions } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 const API_Key = '550cdedbf6caf11afd3650259725861c';

@@ -71113,11 +71113,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _routers_AppRouter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routers/AppRouter.js */ "./src/routers/AppRouter.js");
+/* harmony import */ var _routers_AppRouter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routers/AppRouter */ "./src/routers/AppRouter.js");
+/* global document:true */
+
+/* eslint react/jsx-filename-extension:0 */
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routers_AppRouter_js__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routers_AppRouter__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
 
 /***/ }),
 
@@ -71134,8 +71137,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/styles.scss */ "./src/styles/styles.scss");
 /* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _SearchMovie_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SearchMovie.js */ "./src/components/SearchMovie.js");
-/* harmony import */ var _Movies_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Movies.js */ "./src/components/Movies.js");
+/* harmony import */ var _SearchMovie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SearchMovie */ "./src/components/SearchMovie.js");
+/* harmony import */ var _Movies__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Movies */ "./src/components/Movies.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71154,6 +71157,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* global fetch:true */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71196,9 +71210,9 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SearchMovie_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SearchMovie__WEBPACK_IMPORTED_MODULE_2__["default"], {
         handleSearchMovie: this.handleSearchMovie
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Movies_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Movies__WEBPACK_IMPORTED_MODULE_3__["default"], {
         movies: this.state.movies.results
       }));
     }
@@ -71246,14 +71260,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* global document localStorage alert:true */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71269,28 +71294,42 @@ var Collection =
 function (_React$Component) {
   _inherits(Collection, _React$Component);
 
-  function Collection() {
-    var _getPrototypeOf2;
-
-    var _temp, _this;
+  function Collection(props) {
+    var _this;
 
     _classCallCheck(this, Collection);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Collection)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Collection).call(this, props));
+    _this.state = {
       open: false
-    }, _this.handleClickOpen = function () {
-      _this.setState({
+    };
+    _this.handleClickOpen = _this.handleClickOpen.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleClose = _this.handleClose.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.ExistingCategory = _this.ExistingCategory.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.addtoCategory = _this.addtoCategory.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleCreateCollection = _this.handleCreateCollection.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
+  }
+
+  _createClass(Collection, [{
+    key: "handleClickOpen",
+    value: function handleClickOpen() {
+      this.setState({
         open: true
       });
-    }, _this.handleClose = function () {
-      _this.setState({
+    }
+  }, {
+    key: "handleClose",
+    value: function handleClose() {
+      this.setState({
         open: false
       });
-    }, _this.ExistingCategory = function () {
+    }
+  }, {
+    key: "ExistingCategory",
+    value: function ExistingCategory() {
+      var _this2 = this;
+
       listcat = [];
 
       var _loop = function _loop() {
@@ -71298,28 +71337,33 @@ function (_React$Component) {
         listcat.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
           key: v,
           onClick: function onClick() {
-            return _this.addtoCategory(localStorage.key(v));
+            return _this2.addtoCategory(localStorage.key(v));
           }
         }, localStorage.key(v)));
       };
 
-      for (var i = 0; i < localStorage.length; i++) {
+      for (var i = 0; i < localStorage.length; i += 1) {
         _loop();
       }
 
-      _this.setState({});
-    }, _this.addtoCategory = function (collectionName) {
-      var moviename = _this.props.location.state.moviename;
+      this.setState({});
+    }
+  }, {
+    key: "addtoCategory",
+    value: function addtoCategory(collectionName) {
+      var moviename = this.props.location.state.moviename;
       var storage = [];
-      console.log(moviename);
       storage.push(localStorage.getItem(collectionName));
       storage.push(moviename);
       localStorage.setItem(collectionName, storage);
       alert('Added to selected category');
-    }, _this.handleCreateCollection = function () {
+    }
+  }, {
+    key: "handleCreateCollection",
+    value: function handleCreateCollection() {
       var value = document.getElementById('name').value;
       var storage = [];
-      var moviename = _this.props.location.state.moviename;
+      var moviename = this.props.location.state.moviename;
 
       if (localStorage.getItem(value) != null) {
         storage.push(localStorage.getItem(value));
@@ -71330,13 +71374,10 @@ function (_React$Component) {
         localStorage.setItem(value, storage);
       }
 
-      _this.handleClose();
-
+      this.handleClose();
       alert('Created and added to collection');
-    }, _temp));
-  }
-
-  _createClass(Collection, [{
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71391,20 +71432,18 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_BottomNavigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/BottomNavigation */ "./node_modules/@material-ui/core/BottomNavigation/index.js");
-/* harmony import */ var _material_ui_core_BottomNavigation__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_BottomNavigation__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/BottomNavigationAction */ "./node_modules/@material-ui/core/BottomNavigationAction/index.js");
-/* harmony import */ var _material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Restore */ "./node_modules/@material-ui/icons/Restore.js");
-/* harmony import */ var _material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Favorite */ "./node_modules/@material-ui/icons/Favorite.js");
-/* harmony import */ var _material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/LocationOn */ "./node_modules/@material-ui/icons/LocationOn.js");
-/* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_BottomNavigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/BottomNavigation */ "./node_modules/@material-ui/core/BottomNavigation/index.js");
+/* harmony import */ var _material_ui_core_BottomNavigation__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_BottomNavigation__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/BottomNavigationAction */ "./node_modules/@material-ui/core/BottomNavigationAction/index.js");
+/* harmony import */ var _material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Restore */ "./node_modules/@material-ui/icons/Restore.js");
+/* harmony import */ var _material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Favorite */ "./node_modules/@material-ui/icons/Favorite.js");
+/* harmony import */ var _material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/LocationOn */ "./node_modules/@material-ui/icons/LocationOn.js");
+/* harmony import */ var _material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71415,15 +71454,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+ // import PropTypes from 'prop-types';
 
 
 
@@ -71443,54 +71491,54 @@ function (_React$Component) {
   _inherits(Footer, _React$Component);
 
   function Footer() {
-    var _getPrototypeOf2;
-
-    var _temp, _this;
+    var _this;
 
     _classCallCheck(this, Footer);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Footer)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Footer).call(this));
+    _this.state = {
       value: 0
-    }, _this.handleChange = function (event, value) {
-      _this.setState({
-        value: value
-      });
-    }, _temp));
+    };
+    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
   }
 
   _createClass(Footer, [{
+    key: "handleChange",
+    value: function handleChange(event, value) {
+      this.setState({
+        value: value
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var value = this.state.value;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_BottomNavigation__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_BottomNavigation__WEBPACK_IMPORTED_MODULE_2___default.a, {
         className: "botom-footer",
         value: value,
         onChange: this.handleChange,
         showLabels: true
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_3___default.a, {
         label: "Recents",
-        icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_5___default.a, null)
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_4___default.a, null)
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_3___default.a, {
         label: "Favorites",
-        icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_6___default.a, null)
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_5___default.a, null)
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_BottomNavigationAction__WEBPACK_IMPORTED_MODULE_3___default.a, {
         label: "Nearby",
-        icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_7___default.a, null)
+        icon: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_LocationOn__WEBPACK_IMPORTED_MODULE_6___default.a, null)
       }));
     }
   }]);
 
   return Footer;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component); // Footer.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
 
-Footer.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles)(Footer));
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["withStyles"])(styles)(Footer));
 
 /***/ }),
 
@@ -71509,7 +71557,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
 /* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Home */ "./node_modules/@material-ui/icons/Home.js");
 /* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_3__);
+/* eslint react/jsx-filename-extension:0 */
 
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71560,6 +71616,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71614,14 +71679,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* global localStorage:true */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["render"] }] */
 
 
 var listcat = [];
@@ -71638,30 +71714,10 @@ function (_React$Component) {
     _classCallCheck(this, MovieCollection);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(MovieCollection).call(this, props));
-
-    _this.showCollection = function (keyValue) {
-      lists = [];
-      _this.state.collection = [];
-
-      _this.state.collection.push(localStorage.getItem(keyValue).split(','));
-
-      for (var i = 0; i < _this.state.collection[0].length; i++) {
-        var v = i;
-        console.log("entered to loop");
-        lists.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          key: v
-        }, _this.state.collection[0][v]));
-      }
-
-      _this.setState({});
-
-      console.log(_this.state.collection);
-      console.log(_this.state.collection[0].length);
-    };
-
     _this.state = {
       collection: []
     };
+    _this.showCollection = _this.showCollection.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
@@ -71682,8 +71738,24 @@ function (_React$Component) {
         }, localStorage.key(v)));
       };
 
-      for (var i = 0; i < localStorage.length; i++) {
+      for (var i = 0; i < localStorage.length; i += 1) {
         _loop();
+      }
+
+      this.setState({});
+    }
+  }, {
+    key: "showCollection",
+    value: function showCollection(keyValue) {
+      lists = [];
+      this.state.collection = [];
+      this.state.collection.push(localStorage.getItem(keyValue).split(','));
+
+      for (var i = 0; i < this.state.collection[0].length; i += 1) {
+        var v = i;
+        lists.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: v
+        }, this.state.collection[0][v]));
       }
 
       this.setState({});
@@ -71691,7 +71763,6 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var collection = this.state.collection;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "collection"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71742,6 +71813,17 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* global fetch:true */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71777,8 +71859,6 @@ function (_React$Component) {
             movies: movies
           };
         });
-
-        console.log(movies);
       });
     }
   }, {
@@ -71788,7 +71868,8 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "movie-detail"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, movies.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://image.tmdb.org/t/p/original/".concat(movies.poster_path)
+        src: "https://image.tmdb.org/t/p/original/".concat(movies.poster_path),
+        alt: "poster"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
         component: "p"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tagline:\xA0"), movies.tagline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -71836,7 +71917,16 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Movie_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Movie.js */ "./src/components/Movie.js");
+/* harmony import */ var _Movie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Movie */ "./src/components/Movie.js");
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71847,9 +71937,9 @@ var Movies = function Movies(props) {
     className: "results-heading"
   }, "Search Results") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex-container"
-  }, props.movies ? props.movies.map(function (movie, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Movie_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      key: index,
+  }, props.movies ? props.movies.map(function (movie) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Movie__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: movie.id,
       movie: movie
     });
   }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)));
@@ -71871,6 +71961,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71917,6 +72016,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71952,6 +72060,8 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "hero"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Input__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -71959,7 +72069,9 @@ function (_React$Component) {
         onChange: this.handleOnChange
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_2___default.a, {
         className: "search-icon",
-        onClick: this.props.handleSearchMovie.bind(null, this.state.searchTerm)
+        onClick: function onClick() {
+          return _this2.props.handleSearchMovie(_this2.state.searchTerm);
+        }
       }));
     }
   }]);
@@ -72002,6 +72114,17 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* global fetch:true */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -72100,14 +72223,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-/* harmony import */ var _components_App_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/App.js */ "./src/components/App.js");
-/* harmony import */ var _components_MovieCollection_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/MovieCollection.js */ "./src/components/MovieCollection.js");
-/* harmony import */ var _components_MovieDetail_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/MovieDetail.js */ "./src/components/MovieDetail.js");
-/* harmony import */ var _components_Header_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Header.js */ "./src/components/Header.js");
-/* harmony import */ var _components_Footer_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer.js */ "./src/components/Footer.js");
-/* harmony import */ var _components_NotFound_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/NotFound.js */ "./src/components/NotFound.js");
-/* harmony import */ var _components_TrendingMovies_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/TrendingMovies.js */ "./src/components/TrendingMovies.js");
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/App */ "./src/components/App.js");
+/* harmony import */ var _components_MovieCollection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/MovieCollection */ "./src/components/MovieCollection.js");
+/* harmony import */ var _components_MovieDetail__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/MovieDetail */ "./src/components/MovieDetail.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Header */ "./src/components/Header.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _components_NotFound__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/NotFound */ "./src/components/NotFound.js");
+/* harmony import */ var _components_TrendingMovies__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/TrendingMovies */ "./src/components/TrendingMovies.js");
 /* harmony import */ var _components_Collection__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Collection */ "./src/components/Collection.js");
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint react/prop-types: 0 */
+
+/* eslint camelcase: 0 */
+
+/* eslint react/jsx-filename-extension:0 */
+
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -72120,26 +72252,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var AppRouter = function AppRouter() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header_js__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
     path: "/",
-    component: _components_App_js__WEBPACK_IMPORTED_MODULE_2__["default"],
-    exact: true
+    component: _components_App__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/collections",
-    component: _components_MovieCollection_js__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _components_MovieCollection__WEBPACK_IMPORTED_MODULE_3__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/movies/:id",
-    component: _components_MovieDetail_js__WEBPACK_IMPORTED_MODULE_4__["default"]
+    component: _components_MovieDetail__WEBPACK_IMPORTED_MODULE_4__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/trending-movies",
-    component: _components_TrendingMovies_js__WEBPACK_IMPORTED_MODULE_8__["default"]
+    component: _components_TrendingMovies__WEBPACK_IMPORTED_MODULE_8__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/collection",
     component: _components_Collection__WEBPACK_IMPORTED_MODULE_9__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    component: _components_NotFound_js__WEBPACK_IMPORTED_MODULE_7__["default"]
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer_js__WEBPACK_IMPORTED_MODULE_6__["default"], null)));
+    component: _components_NotFound__WEBPACK_IMPORTED_MODULE_7__["default"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AppRouter);

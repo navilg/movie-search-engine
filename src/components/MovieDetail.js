@@ -1,3 +1,10 @@
+/* eslint react/jsx-filename-extension:0 */
+/* eslint react/prop-types: 0 */
+/* eslint camelcase: 0 */
+/* eslint react/jsx-filename-extension:0 */
+/* global fetch:true */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+
 import React from 'react';
 import { Typography, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -18,7 +25,6 @@ class MovieDetail extends React.Component {
       .then(response => response.json())
       .then(movies => {
         this.setState(() => ({ movies }))
-        console.log(movies)
       });
   }
 
@@ -28,7 +34,7 @@ class MovieDetail extends React.Component {
 
       <div className="movie-detail">
         <h1>{movies.title}</h1>
-        <img src={`https://image.tmdb.org/t/p/original/${movies.poster_path}`} />
+        <img src={`https://image.tmdb.org/t/p/original/${movies.poster_path}`} alt="poster" />
         <div>
           <Typography component="p">
             <strong>Tagline:&nbsp;</strong>{movies.tagline}

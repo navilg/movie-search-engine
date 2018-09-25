@@ -1,3 +1,9 @@
+/* eslint react/jsx-filename-extension:0 */
+/* eslint react/prop-types: 0 */
+/* eslint camelcase: 0 */
+/* eslint react/jsx-filename-extension:0 */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+
 import React from 'react';
 import { Card, CardActionArea, CardContent, CardMedia, Typography, CardActions } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -30,6 +36,6 @@ const Movie = (props) => {
         </CardActions>
       </Card>
   );
-};
+}
 
 export default Movie;

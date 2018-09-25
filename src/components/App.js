@@ -1,8 +1,15 @@
+/* eslint react/jsx-filename-extension:0 */
+/* eslint react/prop-types: 0 */
+/* eslint camelcase: 0 */
+/* eslint react/jsx-filename-extension:0 */
+/* global fetch:true */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+
 import React from 'react';
 import '../styles/styles.scss';
 
-import SearchMovie from './SearchMovie.js';
-import Movies from './Movies.js';
+import SearchMovie from './SearchMovie';
+import Movies from './Movies';
 
 const API_KEY = '550cdedbf6caf11afd3650259725861c';
 
