@@ -1,1 +1,1 @@
-![alt text](https://www.github.com/navneetlal/movie-search-engine/public/images/flowChart.jpg)
+![flowChart.jpg](https://github.com/navneetlal/movie-search-engine/blob/master/public/images/flowChart.jpg)
