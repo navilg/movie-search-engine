@@ -24,6 +24,7 @@ class Collection extends React.Component {
     }
 
     ExistingCategory = () => {
+        listcat = [];
             for (var i=0; i < localStorage.length; i++) {
                 let v = i;
                 listcat.push(
@@ -38,15 +39,11 @@ class Collection extends React.Component {
     }
 
     addtoCategory = (collectionName) => {
-        const { moviename, movieid } = this.props.location.state;
-        const moviedetail = {
-            movieName: moviename,
-            movieId: movieid
-        }
+        const { moviename } = this.props.location.state;
         var storage = [];
-        console.log(moviedetail);
+        console.log(moviename);
         storage.push(localStorage.getItem(collectionName));
-        storage.push(JSON.stringify(moviedetail));
+        storage.push(moviename);
         localStorage.setItem(collectionName, storage);
         alert('Added to selected category');
     }
@@ -55,18 +52,14 @@ class Collection extends React.Component {
     handleCreateCollection = () => {
         let value = document.getElementById('name').value;
         var storage = [];
-        const { moviename, movieid } = this.props.location.state;
-        const moviedetail = {
-            movieName: moviename,
-            movieId: movieid
-        }
+        const { moviename } = this.props.location.state;
         if (localStorage.getItem(value) != null) {
             storage.push(localStorage.getItem(value));
-            storage.push(JSON.stringify(moviedetail));
+            storage.push(moviename);
             localStorage.setItem(value, storage);
         }
         else {
-            storage.push(JSON.stringify(moviedetail));
+            storage.push(moviename);
             localStorage.setItem(value, storage);
         }
         this.handleClose();

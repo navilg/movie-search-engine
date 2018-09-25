@@ -71291,6 +71291,8 @@ function (_React$Component) {
         open: false
       });
     }, _this.ExistingCategory = function () {
+      listcat = [];
+
       var _loop = function _loop() {
         var v = i;
         listcat.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -71307,36 +71309,24 @@ function (_React$Component) {
 
       _this.setState({});
     }, _this.addtoCategory = function (collectionName) {
-      var _this$props$location$ = _this.props.location.state,
-          moviename = _this$props$location$.moviename,
-          movieid = _this$props$location$.movieid;
-      var moviedetail = {
-        movieName: moviename,
-        movieId: movieid
-      };
+      var moviename = _this.props.location.state.moviename;
       var storage = [];
-      console.log(moviedetail);
+      console.log(moviename);
       storage.push(localStorage.getItem(collectionName));
-      storage.push(JSON.stringify(moviedetail));
+      storage.push(moviename);
       localStorage.setItem(collectionName, storage);
       alert('Added to selected category');
     }, _this.handleCreateCollection = function () {
       var value = document.getElementById('name').value;
       var storage = [];
-      var _this$props$location$2 = _this.props.location.state,
-          moviename = _this$props$location$2.moviename,
-          movieid = _this$props$location$2.movieid;
-      var moviedetail = {
-        movieName: moviename,
-        movieId: movieid
-      };
+      var moviename = _this.props.location.state.moviename;
 
       if (localStorage.getItem(value) != null) {
         storage.push(localStorage.getItem(value));
-        storage.push(JSON.stringify(moviedetail));
+        storage.push(moviename);
         localStorage.setItem(value, storage);
       } else {
-        storage.push(JSON.stringify(moviedetail));
+        storage.push(moviename);
         localStorage.setItem(value, storage);
       }
 
@@ -71614,7 +71604,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
-!(function webpackMissingModule() { var e = new Error("Cannot find module './CollectionList'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71635,8 +71624,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
 var listcat = [];
+var lists = [];
 
 var MovieCollection =
 /*#__PURE__*/
@@ -71651,11 +71640,23 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(MovieCollection).call(this, props));
 
     _this.showCollection = function (keyValue) {
+      lists = [];
       _this.state.collection = [];
 
-      _this.state.collection.push(localStorage.getItem(keyValue));
+      _this.state.collection.push(localStorage.getItem(keyValue).split(','));
 
-      console.log(_this.state.collection.movieName);
+      for (var i = 0; i < _this.state.collection[0].length; i++) {
+        var v = i;
+        console.log("entered to loop");
+        lists.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: v
+        }, _this.state.collection[0][v]));
+      }
+
+      _this.setState({});
+
+      console.log(_this.state.collection);
+      console.log(_this.state.collection[0].length);
     };
 
     _this.state = {
@@ -71668,6 +71669,8 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
+
+      listcat = [];
 
       var _loop = function _loop() {
         var v = i;
@@ -71695,7 +71698,9 @@ function (_React$Component) {
         className: "list-collection"
       }, listcat.map(function (data) {
         return data;
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, collection[0].movieName));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, lists.map(function (data) {
+        return data;
+      })));
     }
   }]);
 

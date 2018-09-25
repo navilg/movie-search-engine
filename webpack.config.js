@@ -21,7 +21,15 @@ var config = {
 
                 test: /\.js?/,
                 include: SRC_DIR,
-                loader: "babel-loader",
+                use: [
+                    { loader: "babel-loader" },
+                    {
+                        loader: "eslint-loader",
+                        options:
+                            { fix: true }
+                    }
+
+                ]
             },
             {
                 test: /\.(png|jpg|jpeg|gif)$/,
@@ -32,12 +40,6 @@ var config = {
                     }
                 ]
             }
-            // { 
-            //     test: /\.jsx?$/, 
-            //     include: SRC_DIR,
-            //     loader: 'eslint-loader', 
-            //     exclude: /node_modules/ 
-            // }
         ],
 
     },
