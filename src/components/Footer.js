@@ -1,11 +1,7 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* eslint camelcase: 0 */
-/* eslint react/jsx-filename-extension:0 */
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';

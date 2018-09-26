@@ -1,8 +1,5 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* eslint camelcase: 0 */
-/* eslint react/jsx-filename-extension:0 */
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';

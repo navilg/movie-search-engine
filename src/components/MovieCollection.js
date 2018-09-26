@@ -1,8 +1,6 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* eslint camelcase: 0 */
 /* global localStorage:true */
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["render"] }] */
 
 import React from 'react';
 import { Button } from '@material-ui/core';
@@ -36,12 +34,13 @@ class MovieCollection extends React.Component {
   }
   showCollection(keyValue) {
     lists = [];
-    this.state.collection = [];
-    this.state.collection.push(localStorage.getItem(keyValue).split(','));
-    for(let i=0; i<this.state.collection[0].length;i += 1){
+    var { collection } = this.state;
+    collection = [];
+    collection.push(localStorage.getItem(keyValue).split(','));
+    for(let i=0; i<collection[0].length;i += 1){
       let v = i;  
       lists.push(
-        <div key={v}>{this.state.collection[0][v]}</div>
+        <div key={v}>{collection[0][v]}</div>
       )
     }
     this.setState({

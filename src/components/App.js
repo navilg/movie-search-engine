@@ -1,9 +1,6 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* eslint camelcase: 0 */
-/* eslint react/jsx-filename-extension:0 */
 /* global fetch:true */
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 import React from 'react';
 import '../styles/styles.scss';
@@ -30,13 +27,14 @@ class App extends React.Component {
   }
 
   render() {
+    const { movies } = this.state;
     return (
       <div>
         <SearchMovie 
           handleSearchMovie={this.handleSearchMovie}
         />
         <Movies 
-          movies={this.state.movies.results}
+          movies={movies.results}
         />
       </div>
     );

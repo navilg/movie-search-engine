@@ -1,9 +1,6 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* eslint camelcase: 0 */
-/* eslint react/jsx-filename-extension:0 */
 /* global fetch:true */
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 import React from 'react';
 import { Typography, Button } from '@material-ui/core';
@@ -21,7 +18,8 @@ class MovieDetail extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`https://api.themoviedb.org/3/movie/${this.props.match.params.id}?api_key=${API_KEY}&language=en-US`)
+    const { match } = this.props;
+    fetch(`https://api.themoviedb.org/3/movie/${match.params.id}?api_key=${API_KEY}&language=en-US`)
       .then(response => response.json())
       .then(movies => {
         this.setState(() => ({ movies }))
@@ -29,9 +27,8 @@ class MovieDetail extends React.Component {
   }
 
   render() {
-    const movies = this.state.movies;
+    const { movies } = this.state;
     return (
-
       <div className="movie-detail">
         <h1>{movies.title}</h1>
         <img src={`https://image.tmdb.org/t/p/original/${movies.poster_path}`} alt="poster" />
@@ -53,9 +50,6 @@ class MovieDetail extends React.Component {
           </Typography>
           <Typography component="p">
             <strong>Homepage:&nbsp;</strong>{movies.homepage}
-          </Typography>
-          <Typography component="p">
-            {/* <strong>Tagline:&nbsp;</strong>{movies['production_companies'][0]['name']} */}
           </Typography>
           <Typography component="p">
             <strong>Overview:&nbsp;</strong>{movies.overview}

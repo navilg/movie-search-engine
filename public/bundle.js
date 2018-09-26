@@ -71161,13 +71161,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
 /* global fetch:true */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71210,10 +71204,11 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var movies = this.state.movies;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SearchMovie__WEBPACK_IMPORTED_MODULE_2__["default"], {
         handleSearchMovie: this.handleSearchMovie
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Movies__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        movies: this.state.movies.results
+        movies: movies.results
       }));
     }
   }]);
@@ -71272,13 +71267,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
-/* global document localStorage alert:true */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+/* global document localStorage :true */
 
 
 
@@ -71351,35 +71340,36 @@ function (_React$Component) {
   }, {
     key: "addtoCategory",
     value: function addtoCategory(collectionName) {
-      var moviename = this.props.location.state.moviename;
+      var location = this.props.location;
       var storage = [];
       storage.push(localStorage.getItem(collectionName));
-      storage.push(moviename);
-      localStorage.setItem(collectionName, storage);
-      alert('Added to selected category');
+      storage.push(location.state.moviename);
+      localStorage.setItem(collectionName, storage); // alert('Added to selected category');
     }
   }, {
     key: "handleCreateCollection",
     value: function handleCreateCollection() {
-      var value = document.getElementById('name').value;
+      var _document$getElementB = document.getElementById('name'),
+          value = _document$getElementB.value;
+
       var storage = [];
-      var moviename = this.props.location.state.moviename;
+      var location = this.props.location;
 
       if (localStorage.getItem(value) != null) {
         storage.push(localStorage.getItem(value));
-        storage.push(moviename);
+        storage.push(location.state.moviename);
         localStorage.setItem(value, storage);
       } else {
-        storage.push(moviename);
+        storage.push(location.state.moviename);
         localStorage.setItem(value, storage);
       }
 
-      this.handleClose();
-      alert('Created and added to collection');
+      this.handleClose(); // alert('Created and added to collection');
     }
   }, {
     key: "render",
     value: function render() {
+      var open = this.state.open;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "collection-list"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -71393,7 +71383,7 @@ function (_React$Component) {
       }, listcat.map(function (data) {
         return data;
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        open: this.state.open,
+        open: open,
         onClose: this.handleClose,
         "aria-labelledby": "form-dialog-title"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -71465,13 +71455,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 /* eslint react/jsx-filename-extension:0 */
 
 /* eslint react/prop-types: 0 */
-
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
- // import PropTypes from 'prop-types';
 
 
 
@@ -71561,12 +71544,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
-
 
 
 
@@ -71620,16 +71597,11 @@ __webpack_require__.r(__webpack_exports__);
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
-
-var Movie = function Movie(props) {
+var Movie = function Movie(_ref) {
+  var movie = _ref.movie;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     className: "flex-element"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardActionArea"], {
@@ -71638,18 +71610,18 @@ var Movie = function Movie(props) {
     className: "cardimage",
     component: "img",
     height: "300",
-    image: "https://image.tmdb.org/t/p/original/".concat(props.movie.poster_path),
+    image: "https://image.tmdb.org/t/p/original/".concat(movie.poster_path),
     title: "Contemplative Reptile"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     gutterBottom: true,
     variant: "headline",
     component: "h2"
-  }, props.movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+  }, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     component: "p"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Release Date: "), " ", props.movie.release_date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Release Date: "), " ", movie.release_date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     component: "p"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Rating: "), " ", props.movie.vote_average))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardActions"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "movies/".concat(props.movie.id)
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Rating: "), " ", movie.vote_average))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardActions"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "movies/".concat(movie.id)
   }, "view")));
 };
 
@@ -71691,11 +71663,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
 /* global localStorage:true */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["render"] }] */
 
 
 var listcat = [];
@@ -71746,14 +71714,15 @@ function (_React$Component) {
     key: "showCollection",
     value: function showCollection(keyValue) {
       lists = [];
-      this.state.collection = [];
-      this.state.collection.push(localStorage.getItem(keyValue).split(','));
+      var collection = this.state.collection;
+      collection = [];
+      collection.push(localStorage.getItem(keyValue).split(','));
 
-      for (var i = 0; i < this.state.collection[0].length; i += 1) {
+      for (var i = 0; i < collection[0].length; i += 1) {
         var v = i;
         lists.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: v
-        }, this.state.collection[0][v]));
+        }, collection[0][v]));
       }
 
       this.setState({});
@@ -71815,13 +71784,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
 /* global fetch:true */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -71849,7 +71812,8 @@ function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      fetch("https://api.themoviedb.org/3/movie/".concat(this.props.match.params.id, "?api_key=").concat(API_KEY, "&language=en-US")).then(function (response) {
+      var match = this.props.match;
+      fetch("https://api.themoviedb.org/3/movie/".concat(match.params.id, "?api_key=").concat(API_KEY, "&language=en-US")).then(function (response) {
         return response.json();
       }).then(function (movies) {
         _this2.setState(function () {
@@ -71881,8 +71845,6 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Status:\xA0"), movies.status), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
         component: "p"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Homepage:\xA0"), movies.homepage), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
-        component: "p"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
         component: "p"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Overview:\xA0"), movies.overview), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: {
@@ -71920,22 +71882,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
-
-var Movies = function Movies(props) {
+var Movies = function Movies(_ref) {
+  var movies = _ref.movies;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "search-results"
-  }, props.movies ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, movies ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "results-heading"
   }, "Search Results") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex-container"
-  }, props.movies ? props.movies.map(function (movie) {
+  }, movies ? movies.map(function (movie) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Movie__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: movie.id,
       movie: movie
@@ -71962,12 +71919,6 @@ __webpack_require__.r(__webpack_exports__);
 /* eslint react/jsx-filename-extension:0 */
 
 /* eslint react/prop-types: 0 */
-
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 
@@ -72018,12 +71969,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
-
 
 
 
@@ -72058,8 +72003,8 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
+      var handleSearchMovie = this.props.handleSearchMovie;
+      var searchTerm = this.state.searchTerm;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "hero"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Input__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -72068,7 +72013,7 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_2___default.a, {
         className: "search-icon",
         onClick: function onClick() {
-          return _this2.props.handleSearchMovie(_this2.state.searchTerm);
+          return handleSearchMovie(searchTerm);
         }
       }));
     }
@@ -72116,13 +72061,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 /* eslint react/prop-types: 0 */
 
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
 /* global fetch:true */
 
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+/* eslint camelcase: 0 */
 
 
 
@@ -72232,12 +72173,6 @@ __webpack_require__.r(__webpack_exports__);
 /* eslint react/jsx-filename-extension:0 */
 
 /* eslint react/prop-types: 0 */
-
-/* eslint camelcase: 0 */
-
-/* eslint react/jsx-filename-extension:0 */
-
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
 
 
 

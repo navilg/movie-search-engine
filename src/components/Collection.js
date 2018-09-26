@@ -1,9 +1,6 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* eslint camelcase: 0 */
-/* eslint react/jsx-filename-extension:0 */
-/* global document localStorage alert:true */
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["handlerNavigate"] }] */
+/* global document localStorage :true */
 
 import React from 'react';
 import Button from '@material-ui/core/Button';
@@ -54,47 +51,48 @@ class Collection extends React.Component {
   }
 
   addtoCategory(collectionName) {
-    const { moviename } = this.props.location.state;
+    const { location } = this.props;
     var storage = [];
     storage.push(localStorage.getItem(collectionName));
-    storage.push(moviename);
+    storage.push(location.state.moviename);
     localStorage.setItem(collectionName, storage);
-    alert('Added to selected category');
+    // alert('Added to selected category');
   }
 
 
   handleCreateCollection() {
-    let value = document.getElementById('name').value;
+    let { value } = document.getElementById('name');
     var storage = [];
-    const { moviename } = this.props.location.state;
+    const { location } = this.props;
     if (localStorage.getItem(value) != null) {
       storage.push(localStorage.getItem(value));
-      storage.push(moviename);
+      storage.push(location.state.moviename);
       localStorage.setItem(value, storage);
     }
     else {
-      storage.push(moviename);
+      storage.push(location.state.moviename);
       localStorage.setItem(value, storage);
     }
     this.handleClose();
-    alert('Created and added to collection');
+    // alert('Created and added to collection');
   };
 
   render() {
+    var { open } = this.state;
     return (
       <div className="collection-list">
         <Button onClick={this.handleClickOpen} className="create-category">Create New Category</Button>
         <Button onClick={this.ExistingCategory} className="existing-category">Existing Category</Button>
         <div className="list-collection">{listcat.map(data => data)}</div>
         <Dialog
-          open={this.state.open}
+          open={open}
           onClose={this.handleClose}
           aria-labelledby="form-dialog-title" >
           <DialogTitle id="form-dialog-title">Add New Collection</DialogTitle>
           <DialogContent>
             <DialogContentText>
               To add a new collection, please enter the collection name here and click on create.
-                        </DialogContentText>
+            </DialogContentText>
             <TextField
               autoFocus
               margin="dense"
