@@ -1,6 +1,5 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* global localStorage:true */
 
 import React from 'react';
 import { Button } from '@material-ui/core';

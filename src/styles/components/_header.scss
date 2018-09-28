@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
 
 .header-element {
+
   .top-nav-appbar {
     width: 100vw;
 
@@ -20,7 +21,6 @@
 
       .left-nav {
         display: inherit;
-        .home-icon {
           .icon {
             color: white;
             height: 2em !important;
@@ -31,7 +31,7 @@
           .icon:hover {
             color: rgb(84, 131, 150);
           }
-        }
+        // }
 
         .headerText {
           padding: 5px;
@@ -39,5 +39,21 @@
         }
       }
     }
+  }
+}
+
+.side-drawer{
+  width: 250px !important;
+  .icon{
+    margin-right: 10px;
+  }
+  a{
+    color: black;
+    display: inherit;
+  }
+  h3{
+    font-size: 1.2em;
+    padding: 5px;
+    margin: auto;
   }
 }

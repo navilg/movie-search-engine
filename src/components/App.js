@@ -1,6 +1,5 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* global fetch:true */
 
 import React from 'react';
 import '../styles/styles.scss';

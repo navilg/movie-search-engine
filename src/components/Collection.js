@@ -1,6 +1,5 @@
 /* eslint react/jsx-filename-extension:0 */
 /* eslint react/prop-types: 0 */
-/* global document localStorage :true */
 
 import React from 'react';
 import Button from '@material-ui/core/Button';
@@ -10,18 +9,22 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Snackbar from '@material-ui/core/Snackbar';
 
 var listcat = [];
-
+var useMask = [];
+var prevMoviename = " ";
 class Collection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       open: false,
+      openSnack: false,
     };
     this.handleClickOpen = this.handleClickOpen.bind(this);
     this.handleClose = this.handleClose.bind(this);
-    this.ExistingCategory = this.ExistingCategory.bind(this);
+    this.handleCloseSnack = this.handleCloseSnack.bind(this);
+    this.showExistingCategory = this.showExistingCategory.bind(this);
     this.addtoCategory = this.addtoCategory.bind(this);
     this.handleCreateCollection = this.handleCreateCollection.bind(this);
   }
@@ -35,7 +38,11 @@ class Collection extends React.Component {
     this.setState({ open: false });
   }
 
-  ExistingCategory() {
+  handleCloseSnack(){
+    this.setState({ openSnack:false });
+  }
+
+  showExistingCategory() {
     listcat = [];
     for (var i = 0; i < localStorage.length; i += 1) {
       let v = i;
@@ -52,14 +59,17 @@ class Collection extends React.Component {
 
   addtoCategory(collectionName) {
     const { location } = this.props;
-    var storage = [];
-    storage.push(localStorage.getItem(collectionName));
-    storage.push(location.state.moviename);
-    localStorage.setItem(collectionName, storage);
-    // alert('Added to selected category');
+    var storage;
+    storage = localStorage.getItem(collectionName);
+    var storageArray = storage.split(',');
+    if (storageArray.indexOf(location.state.moviename) === -1) {
+      storage += ',';
+      storage += location.state.moviename;
+      localStorage.setItem(collectionName, storage);
+      this.setState({ openSnack: true });
+    }
+
   }
-
-
   handleCreateCollection() {
     let { value } = document.getElementById('name');
     var storage = [];
@@ -73,16 +83,22 @@ class Collection extends React.Component {
       storage.push(location.state.moviename);
       localStorage.setItem(value, storage);
     }
+    this.setState({ openSnack:true });
     this.handleClose();
-    // alert('Created and added to collection');
   };
 
   render() {
-    var { open } = this.state;
+    const { location } = this.props;
+    var { open, openSnack } = this.state;
+    if (prevMoviename !== location.state.moviename) {
+      useMask = new Array(localStorage.length);
+      useMask.fill(false);
+      prevMoviename = location.state.moviename;
+    }
     return (
       <div className="collection-list">
         <Button onClick={this.handleClickOpen} className="create-category">Create New Category</Button>
-        <Button onClick={this.ExistingCategory} className="existing-category">Existing Category</Button>
+        <Button onClick={this.showExistingCategory} className="existing-category">Existing Category</Button>
         <div className="list-collection">{listcat.map(data => data)}</div>
         <Dialog
           open={open}
@@ -111,6 +127,16 @@ class Collection extends React.Component {
                     </Button>
           </DialogActions>
         </Dialog>
+
+        <Snackbar
+          anchorOrigin={{ vertical:'bottom', horizontal:'left' }}
+          open={openSnack}
+          onClose={this.handleCloseSnack}
+          ContentProps={{
+            'aria-describedby': 'message-id',
+          }}
+          message={<span id="message-id">Added to collection</span>}
+        />
       </div>
     )
   }

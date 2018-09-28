@@ -34407,6 +34407,38 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/Folder.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Folder.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.default.Fragment, null, _react.default.createElement("path", {
+  d: "M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"
+}), _react.default.createElement("path", {
+  fill: "none",
+  d: "M0 0h24v24H0z"
+})), 'Folder');
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/icons/Home.js":
 /*!*************************************************!*\
   !*** ./node_modules/@material-ui/icons/Home.js ***!
@@ -34471,6 +34503,38 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/Menu.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Menu.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.default.Fragment, null, _react.default.createElement("path", {
+  fill: "none",
+  d: "M0 0h24v24H0z"
+}), _react.default.createElement("path", {
+  d: "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+})), 'Menu');
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/icons/Restore.js":
 /*!****************************************************!*\
   !*** ./node_modules/@material-ui/icons/Restore.js ***!
@@ -34530,6 +34594,41 @@ var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.d
   fill: "none",
   d: "M0 0h24v24H0z"
 })), 'Search');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/Star.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Star.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.default.Fragment, null, _react.default.createElement("path", {
+  fill: "none",
+  d: "M0 0h24v24H0z"
+}), _react.default.createElement("path", {
+  d: "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+}), _react.default.createElement("path", {
+  fill: "none",
+  d: "M0 0h24v24H0z"
+})), 'Star');
 
 exports.default = _default;
 
@@ -34937,7 +35036,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Glo
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat);", ""]);
 
 // module
-exports.push([module.i, "* {\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: white;\n  font-family: Helvetica, Arial, sans-serif; }\n\nbutton {\n  cursor: pointer; }\n\nbutton:disabled {\n  cursor: default; }\n\n.is-active {\n  font-weight: bold;\n  float: left;\n  margin-right: 5px;\n  color: white; }\n\n.is-active:hover {\n  color: antiquewhite; }\n\n.header-element .top-nav-appbar {\n  width: 100vw; }\n  .header-element .top-nav-appbar .top-nav {\n    display: flex;\n    justify-content: space-between;\n    background-color: #081c24; }\n    .header-element .top-nav-appbar .top-nav a {\n      color: white;\n      text-decoration: none;\n      padding: 5px; }\n    .header-element .top-nav-appbar .top-nav a:hover {\n      color: #548396; }\n    .header-element .top-nav-appbar .top-nav .left-nav {\n      display: inherit; }\n      .header-element .top-nav-appbar .top-nav .left-nav .home-icon .icon {\n        color: white;\n        height: 2em !important;\n        width: 3em !important;\n        margin-right: 15px; }\n      .header-element .top-nav-appbar .top-nav .left-nav .home-icon .icon:hover {\n        color: #548396; }\n      .header-element .top-nav-appbar .top-nav .left-nav .headerText {\n        padding: 5px;\n        font-family: \"Gloria Hallelujah\", cursive; }\n\n.hero {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  color: black;\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"/images/background.jpg\");\n  background-size: cover;\n  background-position: center center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  margin-bottom: 20px; }\n  .hero input {\n    height: 30px;\n    width: 60vw;\n    background-color: white;\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n    padding-left: 10px; }\n  .hero .search-icon {\n    height: 2em !important;\n    width: 2em !important;\n    color: white; }\n\n.flex-container {\n  margin-top: 1em !important;\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n  background-color: #bad5f0; }\n\n.search-results h1 {\n  text-align: center; }\n\n.search-results .flex-element {\n  width: 250px;\n  background-color: #f1f1f1;\n  margin: 10px;\n  padding: 20px;\n  font-size: 30px; }\n  .search-results .flex-element .contentflex {\n    width: 250px;\n    height: 489px; }\n    .search-results .flex-element .contentflex .cardimage {\n      display: block;\n      margin: 0 auto;\n      width: 200px; }\n\n.trending-movies {\n  margin-top: 5em; }\n  .trending-movies h1 {\n    text-align: center; }\n  .trending-movies .flex-container-popular {\n    margin-top: 1em !important;\n    display: flex;\n    justify-content: space-around;\n    flex-wrap: wrap;\n    background-color: #bad5f0; }\n    .trending-movies .flex-container-popular .flex-element {\n      width: 250px;\n      background-color: #f1f1f1;\n      margin: 10px;\n      padding: 20px;\n      font-size: 30px; }\n      .trending-movies .flex-container-popular .flex-element .contentflex {\n        width: 250px;\n        height: 489px; }\n        .trending-movies .flex-container-popular .flex-element .contentflex .cardimage {\n          display: block;\n          margin: 0 auto;\n          width: 200px; }\n\n.movie-detail {\n  margin: auto;\n  margin-top: 5em;\n  width: 70%; }\n  .movie-detail h1 {\n    text-align: center;\n    margin-bottom: 15px;\n    margin-left: 10px; }\n  .movie-detail img {\n    float: left;\n    width: 200px;\n    margin: 15px; }\n\n.botom-footer {\n  clear: both !important; }\n\n.collection-list {\n  margin-top: 5em;\n  margin-left: 10px; }\n  .collection-list .create-category {\n    background-color: aliceblue; }\n\n.collection {\n  margin-top: 5em; }\n\n.my-class {\n  background: red; }\n", ""]);
+exports.push([module.i, "* {\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: white;\n  font-family: Helvetica, Arial, sans-serif; }\n\nbutton {\n  cursor: pointer; }\n\nbutton:disabled {\n  cursor: default; }\n\n.is-active {\n  font-weight: bold;\n  float: left;\n  margin-right: 5px;\n  color: white; }\n\n.is-active:hover {\n  color: antiquewhite; }\n\na {\n  text-decoration: none; }\n\n.header-element .top-nav-appbar {\n  width: 100vw; }\n  .header-element .top-nav-appbar .top-nav {\n    display: flex;\n    justify-content: space-between;\n    background-color: #081c24; }\n    .header-element .top-nav-appbar .top-nav a {\n      color: white;\n      text-decoration: none;\n      padding: 5px; }\n    .header-element .top-nav-appbar .top-nav a:hover {\n      color: #548396; }\n    .header-element .top-nav-appbar .top-nav .left-nav {\n      display: inherit; }\n      .header-element .top-nav-appbar .top-nav .left-nav .icon {\n        color: white;\n        height: 2em !important;\n        width: 3em !important;\n        margin-right: 15px; }\n      .header-element .top-nav-appbar .top-nav .left-nav .icon:hover {\n        color: #548396; }\n      .header-element .top-nav-appbar .top-nav .left-nav .headerText {\n        padding: 5px;\n        font-family: \"Gloria Hallelujah\", cursive; }\n\n.side-drawer {\n  width: 250px !important; }\n  .side-drawer .icon {\n    margin-right: 10px; }\n  .side-drawer a {\n    color: black;\n    display: inherit; }\n  .side-drawer h3 {\n    font-size: 1.2em;\n    padding: 5px;\n    margin: auto; }\n\n.hero {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  color: black;\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"/images/background.jpg\");\n  background-size: cover;\n  background-position: center center;\n  background-attachment: fixed;\n  background-repeat: no-repeat;\n  margin-bottom: 20px; }\n  .hero input {\n    height: 30px;\n    width: 60vw;\n    background-color: white;\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n    padding-left: 10px; }\n  .hero .search-icon {\n    height: 2em !important;\n    width: 2em !important;\n    color: white; }\n\n.flex-container {\n  margin-top: 1em !important;\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n  background-color: #bad5f0; }\n\n.search-results h1 {\n  text-align: center; }\n\n.search-results .flex-element {\n  width: 250px;\n  background-color: #f1f1f1;\n  margin: 10px;\n  padding: 20px;\n  font-size: 30px; }\n  .search-results .flex-element .contentflex {\n    width: 250px;\n    height: 489px; }\n    .search-results .flex-element .contentflex .cardimage {\n      display: block;\n      margin: 0 auto;\n      width: 200px; }\n\n.trending-movies {\n  margin-top: 5em; }\n  .trending-movies h1 {\n    text-align: center; }\n  .trending-movies .flex-container-popular {\n    margin-top: 1em !important;\n    display: flex;\n    justify-content: space-around;\n    flex-wrap: wrap;\n    background-color: #bad5f0; }\n    .trending-movies .flex-container-popular .flex-element {\n      width: 250px;\n      background-color: #f1f1f1;\n      margin: 10px;\n      padding: 20px;\n      font-size: 30px; }\n      .trending-movies .flex-container-popular .flex-element .contentflex {\n        width: 250px;\n        height: 489px; }\n        .trending-movies .flex-container-popular .flex-element .contentflex .cardimage {\n          display: block;\n          margin: 0 auto;\n          width: 200px; }\n\n.movie-detail {\n  margin: auto;\n  margin-top: 5em;\n  width: 70%; }\n  .movie-detail h1 {\n    text-align: center;\n    margin-bottom: 15px;\n    margin-left: 10px; }\n  .movie-detail img {\n    float: left;\n    width: 200px;\n    margin: 15px; }\n\n.botom-footer {\n  clear: both !important; }\n\n.collection-list {\n  margin-top: 5em;\n  margin-left: 10px; }\n  .collection-list .create-category {\n    background-color: aliceblue; }\n\n.collection {\n  margin-top: 5em; }\n\n.my-class {\n  background: red; }\n", ""]);
 
 // exports
 
@@ -71161,8 +71260,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 /* eslint react/prop-types: 0 */
 
-/* global fetch:true */
-
 
 
 
@@ -71245,6 +71342,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/DialogTitle */ "./node_modules/@material-ui/core/DialogTitle/index.js");
 /* harmony import */ var _material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_Snackbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Snackbar */ "./node_modules/@material-ui/core/Snackbar/index.js");
+/* harmony import */ var _material_ui_core_Snackbar__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Snackbar__WEBPACK_IMPORTED_MODULE_8__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71267,7 +71366,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 /* eslint react/prop-types: 0 */
 
-/* global document localStorage :true */
 
 
 
@@ -71277,6 +71375,8 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 var listcat = [];
+var useMask = [];
+var prevMoviename = " ";
 
 var Collection =
 /*#__PURE__*/
@@ -71290,11 +71390,13 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Collection).call(this, props));
     _this.state = {
-      open: false
+      open: false,
+      openSnack: false
     };
     _this.handleClickOpen = _this.handleClickOpen.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.handleClose = _this.handleClose.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.ExistingCategory = _this.ExistingCategory.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleCloseSnack = _this.handleCloseSnack.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.showExistingCategory = _this.showExistingCategory.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.addtoCategory = _this.addtoCategory.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.handleCreateCollection = _this.handleCreateCollection.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
@@ -71315,8 +71417,15 @@ function (_React$Component) {
       });
     }
   }, {
-    key: "ExistingCategory",
-    value: function ExistingCategory() {
+    key: "handleCloseSnack",
+    value: function handleCloseSnack() {
+      this.setState({
+        openSnack: false
+      });
+    }
+  }, {
+    key: "showExistingCategory",
+    value: function showExistingCategory() {
       var _this2 = this;
 
       listcat = [];
@@ -71341,10 +71450,18 @@ function (_React$Component) {
     key: "addtoCategory",
     value: function addtoCategory(collectionName) {
       var location = this.props.location;
-      var storage = [];
-      storage.push(localStorage.getItem(collectionName));
-      storage.push(location.state.moviename);
-      localStorage.setItem(collectionName, storage); // alert('Added to selected category');
+      var storage;
+      storage = localStorage.getItem(collectionName);
+      var storageArray = storage.split(',');
+
+      if (storageArray.indexOf(location.state.moviename) === -1) {
+        storage += ',';
+        storage += location.state.moviename;
+        localStorage.setItem(collectionName, storage);
+        this.setState({
+          openSnack: true
+        });
+      }
     }
   }, {
     key: "handleCreateCollection",
@@ -71364,19 +71481,32 @@ function (_React$Component) {
         localStorage.setItem(value, storage);
       }
 
-      this.handleClose(); // alert('Created and added to collection');
+      this.setState({
+        openSnack: true
+      });
+      this.handleClose();
     }
   }, {
     key: "render",
     value: function render() {
-      var open = this.state.open;
+      var location = this.props.location;
+      var _this$state = this.state,
+          open = _this$state.open,
+          openSnack = _this$state.openSnack;
+
+      if (prevMoviename !== location.state.moviename) {
+        useMask = new Array(localStorage.length);
+        useMask.fill(false);
+        prevMoviename = location.state.moviename;
+      }
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "collection-list"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
         onClick: this.handleClickOpen,
         className: "create-category"
       }, "Create New Category"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        onClick: this.ExistingCategory,
+        onClick: this.showExistingCategory,
         className: "existing-category"
       }, "Existing Category"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "list-collection"
@@ -71400,7 +71530,20 @@ function (_React$Component) {
       }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
         onClick: this.handleCreateCollection,
         color: "primary"
-      }, "Create and Add"))));
+      }, "Create and Add"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Snackbar__WEBPACK_IMPORTED_MODULE_8___default.a, {
+        anchorOrigin: {
+          vertical: 'bottom',
+          horizontal: 'left'
+        },
+        open: openSnack,
+        onClose: this.handleCloseSnack,
+        ContentProps: {
+          'aria-describedby': 'message-id'
+        },
+        message: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          id: "message-id"
+        }, "Added to collection")
+      }));
     }
   }]);
 
@@ -71538,8 +71681,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
-/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Home */ "./node_modules/@material-ui/icons/Home.js");
-/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Menu */ "./node_modules/@material-ui/icons/Menu.js");
+/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Home */ "./node_modules/@material-ui/icons/Home.js");
+/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_Star__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Star */ "./node_modules/@material-ui/icons/Star.js");
+/* harmony import */ var _material_ui_icons_Star__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Star__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_Folder__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Folder */ "./node_modules/@material-ui/icons/Folder.js");
+/* harmony import */ var _material_ui_icons_Folder__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Folder__WEBPACK_IMPORTED_MODULE_6__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 /* eslint react/jsx-filename-extension:0 */
 
 /* eslint react/prop-types: 0 */
@@ -71548,33 +71717,97 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Header = function Header() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "header-element"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["AppBar"], {
-    position: "fixed",
-    className: "top-nav-appbar"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Toolbar"], {
-    className: "top-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "left-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/",
-    className: "home-icon"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    className: "icon"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
-    variant: "display1",
-    color: "inherit",
-    className: "headerText"
-  }, "Movie Search Engine")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "link-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-    to: "/trending-movies"
-  }, "Trending Movies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-    to: "/collections"
-  }, "My Collections")))));
-};
+
+
+
+var Header =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Header, _React$Component);
+
+  function Header(props) {
+    var _this;
+
+    _classCallCheck(this, Header);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Header).call(this, props));
+    _this.state = {
+      left: false
+    };
+    _this.toggleDrawer = _this.toggleDrawer.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
+  }
+
+  _createClass(Header, [{
+    key: "toggleDrawer",
+    value: function toggleDrawer(side, open) {
+      this.setState(_defineProperty({}, side, open));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var left = this.state.left;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-element"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["AppBar"], {
+        position: "fixed",
+        className: "top-nav-appbar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Toolbar"], {
+        className: "top-nav"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "left-nav"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        className: "icon",
+        onClick: function onClick() {
+          return _this2.toggleDrawer('left', true);
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+        variant: "display1",
+        color: "inherit",
+        className: "headerText"
+      }, "Movie Search Engine")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
+        open: left,
+        onClose: function onClose() {
+          return _this2.toggleDrawer('left', false);
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        tabIndex: 0,
+        role: "button",
+        onClick: function onClick() {
+          return _this2.toggleDrawer('left', false);
+        },
+        onKeyDown: function onKeyDown() {
+          return _this2.toggleDrawer('left', false);
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "side-drawer"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["List"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
+        button: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        className: "icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Home"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
+        button: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/trending-movies"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Star__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        className: "icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Trending Movies"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
+        button: true,
+        className: "side-link"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/collections"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Folder__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        className: "icon"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "My Collection"))))))));
+    }
+  }]);
+
+  return Header;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
@@ -71662,8 +71895,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 /* eslint react/jsx-filename-extension:0 */
 
 /* eslint react/prop-types: 0 */
-
-/* global localStorage:true */
 
 
 var listcat = [];
@@ -71783,8 +72014,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 /* eslint react/jsx-filename-extension:0 */
 
 /* eslint react/prop-types: 0 */
-
-/* global fetch:true */
 
 
 
@@ -72037,8 +72266,7 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _Movie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Movie */ "./src/components/Movie.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -72061,13 +72289,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 /* eslint react/prop-types: 0 */
 
-/* global fetch:true */
 
-/* eslint camelcase: 0 */
-
-
-
-var API_Key = '550cdedbf6caf11afd3650259725861c';
+var ApiKey = '550cdedbf6caf11afd3650259725861c';
 
 var TrendingMovies =
 /*#__PURE__*/
@@ -72092,7 +72315,7 @@ function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      fetch("https://api.themoviedb.org/3/movie/popular?api_key=".concat(API_Key, "&language=en-US&page=1")).then(function (Data) {
+      fetch("https://api.themoviedb.org/3/movie/popular?api_key=".concat(ApiKey, "&language=en-US&page=1")).then(function (Data) {
         return Data.json();
       }).then(function (data) {
         _this2.setState({
@@ -72112,33 +72335,10 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Trending Movies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex-container-popular"
       }, !isLoading ? movies.map(function (movie) {
-        var id = movie.id,
-            title = movie.title,
-            release_date = movie.release_date,
-            poster_path = movie.poster_path,
-            vote_average = movie.vote_average;
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
-          key: id,
-          className: "flex-element"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardActionArea"], {
-          className: "contentflex"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardMedia"], {
-          className: "cardimage",
-          component: "img",
-          height: "280",
-          image: "https://image.tmdb.org/t/p/original/".concat(poster_path),
-          title: "Contemplative Reptile"
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
-          gutterBottom: true,
-          variant: "headline",
-          component: "h2"
-        }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
-          component: "p"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Release Date: "), " ", release_date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
-          component: "p"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Rating: "), " ", vote_average))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardActions"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-          to: "movies/".concat(id)
-        }, "view")));
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Movie__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          key: movie.id,
+          movie: movie
+        });
       }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)));
     }
   }]);
